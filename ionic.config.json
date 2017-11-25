@@ -1,0 +1,8 @@
+{
+  "name": "PADApp",
+  "app_id": "9062e518",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
