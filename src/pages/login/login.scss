@@ -1,11 +1,24 @@
 page-login {
     #login {
-       background: linear-gradient(to bottom,  #136a8a,#267871);
+        background: #fffbd5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
     }
     .fields {
         background: #eef2f3;
+        
     }
     #loginBtn {
         background: #29a9c0;
+    }
+    #foreground {
+        background-image: url(../assets/imgs/SAFAC.png);
+        background-repeat: no-repeat; 
+        background-size: contain;
+        display:block;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 30px;
     }
 }
