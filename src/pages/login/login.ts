@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../Models/user';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { PACKAGE_ROOT_URL } from '@angular/core/src/application_tokens';
-import { AdmindashboardPage } from '../admindashboard/admindashboard';
+import { AdminDashBoardPage } from '../admin-dash-board/admin-dash-board';
 /**
  * Generated class for the LoginPage page.
  *
@@ -30,12 +30,13 @@ export class LoginPage {
    try {
     const result =  this.afAth.auth.signInWithEmailAndPassword(user.email, user.password);
     if (result) {
-      this.navCtrl.push(AdmindashboardPage);
+      
     }
    } 
    catch (e) {
      console.error(e)
    }
  
+   this.navCtrl.setRoot(AdminDashBoardPage);
  }
 }

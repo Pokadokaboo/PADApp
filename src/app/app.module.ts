@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {LoginPage } from '../pages/login/login';
-import { AdmindashboardPage } from '../pages/admindashboard/admindashboard';
+import { AdminDashBoardPage } from '../pages/admin-dash-board/admin-dash-board';
+import { UserAccountPage } from '../pages/user-account/user-account';
 
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AdminDashBoardPageModule } from '../pages/admin-dash-board/admin-dash-board.module';
 
 export const environment = {
   production: false,
@@ -30,11 +32,11 @@ export const environment = {
   declarations: [
     MyApp,
     HomePage,
-    LoginPage,
-    AdmindashboardPage
+    LoginPage
   ],
   imports: [
     BrowserModule,
+    AdminDashBoardPageModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,

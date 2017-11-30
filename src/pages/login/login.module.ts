@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { LoginPage } from './login';
-import { AdmindashboardPage } from '../admindashboard/admindashboard';
+import { AdminDashBoardPage } from '../admin-dash-board/admin-dash-board';
 
 @NgModule({
   declarations: [
     LoginPage,
-    AdmindashboardPage
+    AdminDashBoardPage
   ],
   imports: [
     IonicPageModule.forChild(LoginPage),
