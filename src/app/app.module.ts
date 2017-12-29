@@ -15,6 +15,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AdminDashBoardPageModule } from '../pages/admin-dash-board/admin-dash-board.module';
+import { UserListService } from '../Service/user-list/user-list.services';
 
 export const environment = {
   production: false,
@@ -51,7 +52,8 @@ export const environment = {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserListService
   ]
 })
 export class AppModule {}

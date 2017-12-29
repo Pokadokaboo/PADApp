@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { User } from '../../Models/user';
+import { User } from '../../Models/User/user.model';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { PACKAGE_ROOT_URL } from '@angular/core/src/application_tokens';
 import { AdminDashBoardPage } from '../admin-dash-board/admin-dash-board';
